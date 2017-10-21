@@ -1,0 +1,39 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+   
+
+    <!-- actions opening views on models -->
+    
+    <!-- <record model="ir.actions.act_window" id="payment_paystack.action_window">
+      <field name="name">Paystack</field>
+      <field name="res_model">payment_paystack.payment_paystack</field>
+      <field name="view_mode">tree,form</field>
+    </record> -->
+   
+
+    <!-- server action to the one above -->
+    
+    <!-- <record model="ir.actions.server" id="payment_paystack.action_server">
+      <field name="name">payment_paystack server</field>
+      <field name="model_id" ref="model_payment_paystack_payment_paystack"/>
+      <field name="state">code</field>
+    </record> -->
+   
+
+    <!-- Top menu item -->
+    
+    <!-- <menuitem name="Paystack" id="payment_paystack.menu_root"/> -->
+   
+    <!-- menu categories -->
+    
+    <!-- <menuitem name="Pay" id="payment_paystack.menu_1" parent="payment_paystack.menu_root"/> -->
+    <!-- <menuitem name="Transactions" id="payment_paystack.menu_2" parent="payment_paystack.menu_root"/> -->
+   
+    <!-- actions -->
+    
+    <!-- <menuitem name="List" id="payment_paystack.menu_1_list" parent="payment_paystack.menu_1"
+              action="payment_paystack.action_window"/> -->
+   
+  </data>
+</odoo>

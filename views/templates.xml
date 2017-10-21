@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="paystack_form">
+                <!--These links will be called when loading your Odoo -->
+                <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                <script src="https://js.paystack.co/v1/paystack.js"></script>
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+                <button type="button" onclick="payWithPaystack()"> Pay </button>
+        </template>
+    </data>
+</odoo>

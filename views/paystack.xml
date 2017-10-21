@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record model="ir.ui.view" id="payment_form_view">
+      <field name="name">payment.form</field>
+      <field name="model">payment_paystack.payment</field>
+      <field name="arch" type="xml">
+          <form string="Payment Form">
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="payment_list_action">
+    <field name="name">Payments</field>
+    <field name="res_model">payment_paystack.payment</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+        <p class="oe_view_nocontent_create">Make the first Payment
+        </p>
+    </field>
+  </record>
+
+  <menuitem name="Paystack" id="payment_paystack.menu_root"/>
+  <menuitem name="Paystack" parent="payment_paystack.menu_root" id="payment_paystack.top_menu"/>
+  <menuitem name="Pay" id="payment_paystack.menu_pay" parent="payment_paystack.top_menu" action="payment_list_action"/>
+</odoo>
