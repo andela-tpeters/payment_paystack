@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <template id="paystack_form">
-                <!--These links will be called when loading your Odoo -->
+    <!-- <data> -->
+        <template id="paystack_js" inherit_id="web.assets_backend">
+                These links will be called when loading your Odoo
                 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
                 <script src="https://js.paystack.co/v1/paystack.js"></script>
-                <script src="https://js.paystack.co/v1/inline.js"></script>
-                <button type="button" onclick="payWithPaystack()"> Pay </button>
+                <xpath expr="." position="inside">
+                    <script src="/payment_paystack/static/src/js/inline.js"></script>
+                    <script src="/payment_paystack/static/src/js/paystack.js"></script>
+                </xpath>
+            
         </template>
-    </data>
+
+        <template id="the_form">
+            <div class="mt8">
+                <button>Heyo</button>
+            </div>
+        </template>
+    <!-- </data> -->
 </odoo>

@@ -4,8 +4,14 @@
       <field name="name">payment.form</field>
       <field name="model">payment_paystack.payment</field>
       <field name="arch" type="xml">
-          <form string="Payment Form">
-          </form>
+        <form>
+            <header>
+                <button string="Generate name" type="object" name="generate_record_name" class="oe_highlight"/>
+                <button string="Generate password" type="object" name="generate_record_password"/>
+                <button string="Clear data" type="object" name="clear_record_data"/>
+                <button type="button" onclick="payWithPaystack()"> Pay </button>
+            </header>
+        </form>
       </field>
   </record>
 
